@@ -1,12 +1,18 @@
 HOW TO USE IN LINUX:
 
-1: RUN THIS AND THIS IN THE FOLDER WITH YOUR PYTHON SCRIPT, WICH HAS TO BE CALLED PYTHON.PY:
+1: MAKE SURE THESE PACKAGES ARE INSTALLED:
+
+sudo apt update
+
+sudo apt install curl dos2unix p7zip-full genisoimage wget cpio qemu
+
+2: RUN THIS AND THIS IN THE FOLDER WITH YOUR PYTHON SCRIPT, WICH HAS TO BE CALLED PYTHON.PY:
 
 curl -O https://raw.githubusercontent.com/OllieOlzu/PYTHON2ISO/main/make_tinycore_iso.sh
 
 curl -O https://raw.githubusercontent.com/OllieOlzu/PYTHON2ISO/main/bash.sh
 
-2: MAKE FILES EXECUTABLE:
+3: MAKE FILES EXECUTABLE:
 
 sudo chown $USER:$USER bash.sh make_tinycore_iso.sh python.py
 
@@ -14,11 +20,11 @@ sudo dos2unix bash.sh make_tinycore_iso.sh
 
 sudo chmod +x bash.sh make_tinycore_iso.sh python.py
 
-3: RUN THIS:
+4: RUN THIS:
 
 sudo ./make_tinycore_iso.sh
 
-4: AFTER LOADED, YOU SHOULD SEE "✅ Done! Output ISO: custom_core.iso". THIS IS YOUR ISO FILE.
+5: AFTER LOADED, YOU SHOULD SEE "✅ Done! Output ISO: custom_core.iso". THIS IS YOUR ISO FILE.
 
 _____________________________________
 
