@@ -14,8 +14,25 @@ sudo dos2unix bash.sh make_tinycore_iso.sh
 
 sudo chmod +x bash.sh make_tinycore_iso.sh python.py
 
-2: RUN THIS:
+3: RUN THIS:
 
 sudo ./make_tinycore_iso.sh
 
-3: AFTER LOADED, YOU SHOULD SEE "✅ Done! Output ISO: custom_core.iso". THIS IS YOUR ISO FILE.
+4: AFTER LOADED, YOU SHOULD SEE "✅ Done! Output ISO: custom_core.iso". THIS IS YOUR ISO FILE.
+
+_____________________________________
+
+HOW TO CLEAN THE FOLDER, SO ONLY python.py AND bash.sh AND make_tinycore_iso.sh ARE THERE
+
+MAKE SURE THIS IS ABSULOTELY IN THE CORRECT FOLDER AS IT COULD DELETE THE ENTIRE LINUX SYSTEM
+
+sudo bash -c '
+shopt -s extglob
+rm -rf !("make_tinycore_iso.sh"|"bash.sh"|"code.sh"|"python.py")
+'
+___________________________________
+
+RUN IN QEMU WITH:
+
+qemu-system-x86_64 -cdrom custom_core.iso -m 512
+
