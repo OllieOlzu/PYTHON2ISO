@@ -2,9 +2,9 @@ HOW TO USE IN LINUX:
 
 1: RUN THIS AND THIS IN THE FOLDER WITH YOUR PYTHON SCRIPT, WICH HAS TO BE CALLED PYTHON.PY:
 
-curl -O [https://raw.githubusercontent.com/OllieOlzu/PYTHON2ISO/make_tinycore_iso.sh](https://raw.githubusercontent.com/OllieOlzu/PYTHON2ISO/main/make_tinycore_iso.sh)
+curl -O https://raw.githubusercontent.com/OllieOlzu/PYTHON2ISO/main/make_tinycore_iso.sh
 
-curl -O [https://raw.githubusercontent.com/OllieOlzu/PYTHON2ISO/bash.sh](https://raw.githubusercontent.com/OllieOlzu/PYTHON2ISO/main/bash.sh)
+curl -O https://raw.githubusercontent.com/OllieOlzu/PYTHON2ISO/main/bash.sh
 
 2: MAKE FILES EXECUTABLE:
 
