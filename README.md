@@ -4,7 +4,7 @@ HOW TO USE IN LINUX:
 
 sudo apt update
 
-sudo apt install curl dos2unix p7zip-full genisoimage wget cpio qemu
+sudo apt install curl dos2unix p7zip-full genisoimage wget cpio qemu qemu-system-x86
 
 2: RUN THIS AND THIS IN THE FOLDER WITH YOUR PYTHON SCRIPT, WICH HAS TO BE CALLED PYTHON.PY:
 
@@ -20,7 +20,7 @@ sudo dos2unix bash.sh make_tinycore_iso.sh
 
 sudo chmod +x bash.sh make_tinycore_iso.sh python.py
 
-4: RUN THIS:
+4: RUN THIS TO BUILD:
 
 sudo ./make_tinycore_iso.sh
 
