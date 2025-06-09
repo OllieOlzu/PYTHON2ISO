@@ -5,7 +5,7 @@ HOW TO USE IN LINUX:
     sudo apt update
     sudo apt install curl dos2unix p7zip-full genisoimage wget cpio qemu qemu-system-x86
 
-2: RUN THIS AND THIS IN THE FOLDER WITH YOUR PYTHON SCRIPT, WICH HAS TO BE CALLED PYTHON.PY:
+2: RUN THIS AND THIS IN THE FOLDER WITH YOUR PYTHON SCRIPT, WHICH HAS TO BE CALLED PYTHON.PY:
 
     curl -O https://raw.githubusercontent.com/OllieOlzu/PYTHON2ISO/main/make_tinycore_iso.sh
     curl -O https://raw.githubusercontent.com/OllieOlzu/PYTHON2ISO/main/bash.sh
@@ -26,7 +26,7 @@ _____________________________________
 
 HOW TO CLEAN THE FOLDER, SO ONLY python.py AND bash.sh AND make_tinycore_iso.sh ARE THERE
 
-MAKE SURE THIS IS ABSULOTELY IN THE CORRECT FOLDER AS IT COULD DELETE THE ENTIRE LINUX SYSTEM
+MAKE SURE THIS IS ABSOLUTELY IN THE CORRECT FOLDER AS IT COULD DELETE THE ENTIRE LINUX SYSTEM
 
     sudo bash -c '
     shopt -s extglob
@@ -42,11 +42,11 @@ __________________________________
 
 NOTES:
 
-The python that gets installed on TLC is very bare bones and doesnt suport meany python features, HOWEVER, if you go into make_tinycore_iso.sh and find this part:
+The Python that gets installed on TLC is very bare bones and doesn't support many python features, HOWEVER, if you go into make_tinycore_iso.sh and find this part:
 
     EXTENSIONS=(bash.tcz ncursesw.tcz readline.tcz python3.9.tcz libffi.tcz openssl-1.1.1.tcz)
 
-You can add extentions to be loaded onto the TLC system. They get loaded like this:
+You can add extensions to be loaded onto the TLC system. They get loaded like this:
 
     for ext in "${EXTENSIONS[@]}"; do
 
@@ -56,7 +56,7 @@ You can add extentions to be loaded onto the TLC system. They get loaded like th
     
     done
 
-So make sure they fit the format of http://tinycorelinux.net/13.x/x86/tcz/ [WHATEVER YOU ADDED TO THE EXTENTIONS LIST]
+So make sure they fit the format of http://tinycorelinux.net/13.x/x86/tcz/ [WHATEVER YOU ADDED TO THE EXTENSIONS LIST]
 
 You can check this by actually going to that link and seeing if a file downloads.
 
