@@ -44,7 +44,7 @@ NOTES:
 
 The python that gets installed on TLC is very bare bones and doesnt suport meany python features, HOWEVER, if you go into make_tinycore_iso.sh and find this part:
 
-EXTENSIONS=(bash.tcz ncursesw.tcz readline.tcz python3.9.tcz libffi.tcz openssl-1.1.1.tcz)
+    EXTENSIONS=(bash.tcz ncursesw.tcz readline.tcz python3.9.tcz libffi.tcz openssl-1.1.1.tcz)
 
 You can add extentions to be loaded onto the TLC system. They get loaded like this:
 
@@ -56,7 +56,7 @@ You can add extentions to be loaded onto the TLC system. They get loaded like th
     
     done
 
-So make sure they fit the format of http://tinycorelinux.net/13.x/x86/tcz/[WHATEVER YOU ADDED TO THE EXTENTIONS LIST]
+So make sure they fit the format of http://tinycorelinux.net/13.x/x86/tcz/ [WHATEVER YOU ADDED TO THE EXTENTIONS LIST]
 
 You can check this by actually going to that link and seeing if a file downloads.
 
