@@ -3,7 +3,7 @@ HOW TO USE IN LINUX:
 1: MAKE SURE THESE PACKAGES ARE INSTALLED:
 
     sudo apt update
-    sudo apt install curl dos2unix p7zip-full genisoimage wget cpio qemu qemu-system-x86
+    sudo apt install curl dos2unix p7zip-full genisoimage wget cpio qemu-system-x86
 
 2: RUN THIS AND THIS IN THE FOLDER WITH YOUR PYTHON SCRIPT, WHICH HAS TO BE CALLED PYTHON.PY:
 
